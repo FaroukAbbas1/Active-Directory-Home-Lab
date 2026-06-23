@@ -7,8 +7,11 @@ Create a structured Active Directory layout using OUs, then populate it with use
 homelab.local
 
 ├── IT
+
 ├── HR
+
 ├── Finance
+
 └── Management
 
 ## Steps
