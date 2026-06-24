@@ -25,10 +25,10 @@ homelab.local
 ## Users Created
 | Name | OU | Group |
 |------|----|-------|
-| John Smith | IT | IT-Team |
-| Sara Jones | HR | HR-Team |
-| Ahmed Ali | Finance | Finance-Team |
-
+| Ahmed Alaa | IT | IT-Team |
+| Amer Ahmed | HR | HR-Team |
+| Sayed Sabry | Finance | Finance-Team |
+|Mohammed Amr | Management | Management-Team |
 ## Screenshots
 *(screenshots will be added here)*
 
