@@ -27,10 +27,14 @@ homelab.local
 |------|----|-------|
 | Ahmed Alaa | IT | IT-Team |
 | Amer Ahmed | HR | HR-Team |
-| Sayed Sabry | Finance | Finance-Team |
-|Mohammed Amr | Management | Management-Team |
-## Screenshots
-*(screenshots will be added here)*
+| Finance User | Finance | Finance-Team |
+| Management User | Management | Management-Team |
 
-## Notes & Issues
-*(document any issues you ran into and how you fixed them)*
+## Screenshots
+
+![Create OU](../screenshots/03-01-create-ou.png)
+![OU Structure](../screenshots/03-02-ou-structure.png)
+![Create User](../screenshots/03-03-create-user.png)
+![User Password](../screenshots/03-04-user-password.png)
+![Create Group](../screenshots/03-08-create-group.png)
+![Add User to Group](../screenshots/03-13-add-user-to-group.png)

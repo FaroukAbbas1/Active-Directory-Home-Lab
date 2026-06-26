@@ -9,7 +9,6 @@ Create and apply Group Policy Objects to enforce security settings and desktop r
 | Password Policy | homelab.local | Enforce strong passwords |
 | Login Banner | homelab.local | Display warning message at login |
 | Disable Control Panel | HR OU | Restrict HR users from Control Panel |
-| Desktop Restrictions | HR OU | Prevent desktop customization |
 | Mapped Drives | IT OU | Auto map IT share drive |
 
 ## Steps
@@ -27,7 +26,16 @@ Create and apply Group Policy Objects to enforce security settings and desktop r
 - Login banner text: "Authorized users only. All activity is monitored."
 
 ## Screenshots
-*(screenshots will be added here)*
 
-## Notes & Issues
-*(document any issues you ran into and how you fixed them)*
+![GPO Management](../screenshots/06-01-gpo-management.png)
+![GPO Editor](../screenshots/06-03-gpo-editor.png)
+![Password Policy Before](../screenshots/06-04-password-policy-before.png)
+![Password Policy Configured](../screenshots/06-05-password-policy-configured.png)
+![Lockout Policy](../screenshots/06-06-lockout-policy.png)
+![Login Banner GPO](../screenshots/06-07-login-banner-gpo.png)
+![Login Banner Settings](../screenshots/06-08-login-banner-settings.png)
+![Disable Control Panel](../screenshots/06-09-disable-control-panel.png)
+![Mapped Drive](../screenshots/06-10-mapped-drive.png)
+![Login Banner](../screenshots/06-11-login-banner.png)
+![Mapped Drive Z](../screenshots/06-12-mapped-drive-z.png)
+![Control Panel Blocked](../screenshots/06-13-control-panel-blocked.png)
