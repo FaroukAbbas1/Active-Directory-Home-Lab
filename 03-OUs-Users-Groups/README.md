@@ -27,8 +27,8 @@ homelab.local
 |------|----|-------|
 | Ahmed Alaa | IT | IT-Team |
 | Amer Ahmed | HR | HR-Team |
-| Finance User | Finance | Finance-Team |
-| Management User | Management | Management-Team |
+| Sayed Sabry | Finance | Finance-Team |
+| Mohammed Amr | Management | Management-Team |
 
 ## Screenshots
 
