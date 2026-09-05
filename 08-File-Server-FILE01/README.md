@@ -1,40 +1,42 @@
 # 08 - File Server (FILE01)
 
 ## Goal
-Move file sharing responsibilities off the Domain Controller (DC01) onto a dedicated File Server (FILE01), following the principle of not overloading a DC with non-essential roles.
+Move file sharing responsibilities off the Domain Controller (DC01) onto a dedicated File Server (FILE01), since hosting shares directly on a DC is not a best practice in real-world environments.
 
 ## VM Specs
-
-| Setting | Value |
-|--------|-------|
-| Name | FILE01 |
-| OS | Windows Server 2022 Standard (Desktop Experience) |
-| RAM | 2048 MB |
-| Storage | 40 GB |
-| CPUs | 2 |
-| Network Adapter 1 | NAT |
-| Network Adapter 2 | Host-Only (same network as DC01/CLIENT01) |
-| Static IP | 192.168.56.103 |
-| DNS | 192.168.56.102 (DC01) |
+**RAM:** 2048 MB
+**Storage:** 40 GB
+**CPUs:** 2
+**Network:** NAT (Adapter 1) + Host-Only vboxnet0 (Adapter 2)
+**Static IP:** 192.168.56.103
+**DNS:** 192.168.56.102
 
 ## Steps
-1. Create FILE01 VM in VirtualBox with the specs above
-2. Install Windows Server 2022 (manual install, Desktop Experience edition)
-3. Configure static IP and DNS pointing to DC01
-4. Rename computer to FILE01
-5. Join FILE01 to the homelab.local domain
-6. Verify FILE01 appears in Active Directory Users and Computers under Computers
-7. Recreate shared folders (IT, HR, Finance, Management) on FILE01
-8. Reapply NTFS + Share permissions matching each department's security group
-9. Update the Mapped Drives GPO to point to \\FILE01\ instead of \\DC01\
-10. Remove the shares from DC01 to keep the DC clean
-
-## Verification
-- (to be filled in after testing)
-
-## Screenshots
-
-<!-- add screenshots here, e.g.
-![FILE01 VM Creation](../screenshots/08-01-file01-vm-creation.png)
-![FILE01 Domain Joined](../screenshots/08-02-file01-domain-joined.png)
--->
+---
+### Step 1 - VM Creation and Windows Installation
+**Details:** Created FILE01 in VirtualBox with the specs above and installed Windows Server 2022 (Desktop Experience).
+**Issue:** VirtualBox's Unattended Installation failed with "Windows cannot find the Microsoft Software License Terms."
+**Fix:** Recreated the VM with Unattended Installation unchecked and completed a standard manual install instead.
+---
+### Step 2 - Domain Join
+**Details:** Renamed the computer to FILE01, set the static IP/DNS, and joined it to the homelab.local domain. Confirmed it appears in Active Directory Users and Computers.
+![FILE01 in ADUC](../screenshots/08-01-file01-in-aduc.png)
+![Current User](../screenshots/08-02-Current-User.png)
+---
+### Step 3 - Shared Folders and Permissions
+**Details:** Recreated the department folder structure (IT, HR, Finance, Management) on FILE01, shared each folder, and applied NTFS + Share permissions matching each department's security group. Tested access per department from CLIENT01.
+![Access Test Success](../screenshots/08-03-file01-access-test-success.png)
+![Permissions Test Success](../screenshots/08-04-file01-permissions-test-success.png)
+---
+### Step 4 - Mapped Drives GPO Update
+**Details:** Updated the Mapped Drives GPO to use Item-Level Targeting by OU, giving each department its own drive letter, all pointing to FILE01 instead of DC01.
+- IT → Z: → \\FILE01\IT$
+- HR → X: → \\FILE01\HR$
+- Finance → Y: → \\FILE01\Finance$
+- Management → W: → \\FILE01\Management$
+![Mapped Drives GPO](../screenshots/08-05-mapped-drives-gpo-aduc.png)
+![HR Drive Test](../screenshots/08-06-mapped-drives-hr-test.png)
+![IT Drive Test](../screenshots/08-07-mapped-drives-it-test.png)
+---
+### Step 5 - DC01 Decommission
+**Details:** Removed the old shares from DC01 after confirming FILE01 was fully functional, keeping the Domain Controller clean of unrelated roles.
