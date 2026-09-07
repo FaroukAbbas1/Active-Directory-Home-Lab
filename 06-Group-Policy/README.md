@@ -28,6 +28,7 @@ Create and apply Group Policy Objects to enforce security settings and desktop r
 ## Screenshots
 
 ![GPO Management](../screenshots/06-01-gpo-management.png)
+![Create Password Policy](../screenshots/06-02-create-password-policy.png)
 ![GPO Editor](../screenshots/06-03-gpo-editor.png)
 ![Password Policy Before](../screenshots/06-04-password-policy-before.png)
 ![Password Policy Configured](../screenshots/06-05-password-policy-configured.png)

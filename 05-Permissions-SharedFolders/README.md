@@ -28,5 +28,8 @@ Create shared folders with proper NTFS permissions so only the right users and g
 ![IT Sharing](../screenshots/05-02-it-sharing.png)
 ![IT Share Permissions](../screenshots/05-03-it-share-permissions.png)
 ![IT NTFS Permissions](../screenshots/05-04-it-ntfs-permissions.png)
+![HR Permissions](../screenshots/05-05-hr-permissions.png)
+![Finance Permissions](../screenshots/05-06-finance-permissions.png)
+![Management Permissions](../screenshots/05-07-management-permissions.png)
 ![IT Access Success](../screenshots/05-08-it-access-success.png)
 ![IT Denied HR](../screenshots/05-09-it-denied-hr.png)

@@ -22,7 +22,8 @@ Join the Windows 11 client machine to the homelab.local domain and verify login 
 - Ran nltest /dsgetdc:homelab.local to confirm DC connection
 
 ## Screenshots
-
+![Network Properties](../screenshots/04-01-network-properties.png)
+![Static IP](../screenshots/04-02-static-ip.png)
 ![Client Network](../screenshots/04-03-client-network.png)
 ![Client Static IP](../screenshots/04-04-client-static-ip.png)
 ![Ping Server](../screenshots/04-05-ping-server.png)

@@ -30,6 +30,7 @@ Install the Active Directory Domain Services role on Windows Server 2022 and pro
 ![DC Options](../screenshots/02-07-dc-options.png)
 ![NetBIOS](../screenshots/02-08-netbios.png)
 ![Review Options](../screenshots/02-09-review-options.png)
+![Installing AD](../screenshots/02-10-installing-ad.png)
 ![Login Screen](../screenshots/02-11-login-screen.png)
 ![Server Manager After DC](../screenshots/02-12-server-manager-after-dc.png)
 ![ADUC Open](../screenshots/02-13-aduc-open.png)
