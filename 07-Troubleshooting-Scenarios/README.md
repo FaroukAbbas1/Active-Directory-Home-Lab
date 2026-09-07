@@ -56,21 +56,6 @@ Simulate and document real IT troubleshooting scenarios using the format: Proble
 **Problem:** Client could not resolve homelab.local domain name.
 **Diagnosis:** Ran nslookup homelab.local → timed out. DNS was pointing to wrong IP.
 **Fix:** Changed DNS to 192.168.56.102 → ran ipconfig /flushdns → nslookup resolved successfully.
-![Login Screen](../screenshots/07-01-login-screen.png)
-![Account Locked](../screenshots/07-02-account-locked.png)
-![Account Locked ADUC](../screenshots/07-03-account-locked-aduc.png)
-![Password Reset](../screenshots/07-04-password-reset.png)
-![Password Reset Done](../screenshots/07-05-password-reset-done.png)
-![Permissions Denied](../screenshots/07-06-permissions-denied.png)
-![Access Denied](../screenshots/07-07-access-denied.png)
-![Permissions Fixed](../screenshots/07-08-permissions-fixed.png)
-![Access Restored](../screenshots/07-09-access-restored.png)
-![GPO Disabled](../screenshots/07-10-gpo-disabled.png)
-![gpresult Working](../screenshots/07-10-gpresult-working.png)
-![GPO Unlinked](../screenshots/07-11-gpo-unlinked.png)
-![gpresult Policy Missing](../screenshots/07-12-gpresult-policy-missing.png)
-![GPO Relinked](../screenshots/07-13-gpo-relinked.png)
-![gpresult Policy Restored](../screenshots/07-14-gpresult-policy-restored)
 ![NsLookup Fail](../screenshots/07-15-nslookup-fail.png)
 ![DNS Fixed](../screenshots/07-16-dns-fixed-settings.png)
 ![NsLookup Working](../screenshots/07-17-nslookup-working.png)
