@@ -8,8 +8,9 @@ Create and apply Group Policy Objects to enforce security settings and desktop r
 |----------|-----------|---------|
 | Password Policy | homelab.local | Enforce strong passwords |
 | Login Banner | homelab.local | Display warning message at login |
-| Disable Control Panel | HR OU | Restrict HR users from Control Panel |
-| Mapped Drives | IT OU | Auto map IT share drive |
+| Disable Control Panel | HR / Management / Finance OUs | Restrict Group users from Control Panel |
+| Mapped Drives | All Security Grups OUS | Auto map  shares drive |
+| USB Disabled | HR / Management / Finance OUs | Prevent Users From Using USBs |
 
 ## Steps
 1. Open Group Policy Management
@@ -40,3 +41,5 @@ Create and apply Group Policy Objects to enforce security settings and desktop r
 ![Login Banner](../screenshots/06-11-login-banner.png)
 ![Mapped Drive Z](../screenshots/06-12-mapped-drive-z.png)
 ![Control Panel Blocked](../screenshots/06-13-control-panel-blocked.png)
+![USB GPO Settings](../screenshots/06-14-usb-gpo-setting.png)
+![USB gpresult Applied](../screenshots/06-15-usb-gpresult-applied.png)
