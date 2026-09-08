@@ -11,6 +11,7 @@ A hands-on home lab project built to demonstrate core Windows Server, Active Dir
 ## What This Lab Covers
 | Step | Topic |
 |------|-------|
+| 00 | Network Topology Diagram |
 | 01 | VirtualBox & ISO Setup |
 | 02 | Active Directory DS Install & Domain Controller Promotion |
 | 03 | Organizational Units, Users & Groups |
@@ -21,7 +22,6 @@ A hands-on home lab project built to demonstrate core Windows Server, Active Dir
 | 08 | Dedicated File Server (FILE01) |
 | 09 | DHCP Server |
 | 10 | Second Domain Client (CLIENT02) |
-| 11 | Network Topology Diagram |
 
 ## Skills Demonstrated
 - Windows Server 2022 administration
