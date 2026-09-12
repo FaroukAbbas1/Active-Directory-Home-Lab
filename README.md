@@ -1,11 +1,12 @@
 # Active Directory Home Lab
 
-A hands-on home lab project built to demonstrate core Windows Server, Active Directory, and small-business IT infrastructure skills relevant to Help Desk and Sysadmin roles.
+A hands-on home lab project built to demonstrate core Windows Server, Active Directory, networking, and firewall/VPN security skills relevant to Help Desk, SysAdmin, and Network Security roles.
 
 ## Environment
 - Windows Server 2022 (Domain Controller — DC01)
 - Windows Server 2022 (File Server — FILE01)
 - Windows 11 (Client Machines — CLIENT01, CLIENT02)
+- pfSense CE (Router/Firewall/VPN Gateway)
 - VirtualBox (Hypervisor)
 
 ## What This Lab Covers
@@ -22,6 +23,10 @@ A hands-on home lab project built to demonstrate core Windows Server, Active Dir
 | 08 | Dedicated File Server (FILE01) |
 | 09 | DHCP Server |
 | 10 | Second Domain Client (CLIENT02) |
+| 11 | pfSense Firewall (VM Setup) |
+| 12 | pfSense Gateway Migration |
+| 13 | pfSense Firewall Rules (Default-Deny Policy) |
+| 14 | VPN (OpenVPN) — Secure Remote Access |
 
 ## Skills Demonstrated
 - Windows Server 2022 administration
@@ -29,5 +34,8 @@ A hands-on home lab project built to demonstrate core Windows Server, Active Dir
 - Group Policy configuration (password policy, restrictions, mapped drives, security hardening)
 - User, group, and permission management across multiple departments
 - File server deployment and share/NTFS permission design
-- Network troubleshooting (DNS, DHCP, connectivity, authentication, domain communication)
+- Firewall/router deployment and administration (pfSense)
+- Default-Deny (whitelist) firewall policy design
+- Secure remote access via VPN with least-privilege access control
+- Network troubleshooting (DNS, DHCP, connectivity, authentication, domain communication, firewall/routing)
 - Documentation of real-world troubleshooting scenarios (Problem → Diagnosis → Fix)
